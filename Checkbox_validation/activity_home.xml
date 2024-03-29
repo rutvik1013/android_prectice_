@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:orientation="vertical"
+    tools:context=".HomeActivity">
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Food Ordering System"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:gravity="center"
+        android:textColor="#E64A19"
+        />
+
+    <CheckBox
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Pizza"
+        android:textSize="20sp"
+        android:layout_marginTop="8dp"
+        android:textStyle="bold"
+        android:id="@+id/chkpizza"
+        android:backgroundTint="#E64A19"/>
+
+    <CheckBox
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Burger"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:backgroundTint="#E64A19"
+        android:id="@+id/chkburger"
+        />
+
+    <CheckBox
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Dhosa"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:backgroundTint="#E64A19"
+        android:id="@+id/chkdhosa"
+        />
+
+    <CheckBox
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Noodles"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:backgroundTint="#E64A19"
+        android:id="@+id/chknoodles"
+        />
+    
+    <CheckBox
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Manchurian"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:id="@+id/chkmanchurian"
+        android:backgroundTint="#E64A19"/>
+
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="25dp"
+        android:text="Order"
+        android:textStyle="bold"
+        android:textColor="@color/white"
+        android:backgroundTint="#E64A19"
+        android:id="@+id/btnorder"/>
+
+</LinearLayout>

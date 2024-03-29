@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    tools:context=".CheckboxActivity">
+
+    <CheckBox
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="English"
+        android:textSize="14sp"
+        android:textStyle="bold"
+        android:backgroundTint="#303F9F"
+        android:id="@+id/checkbox1"/>
+
+    <CheckBox
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Gujarati"
+        android:id="@+id/checkbox2"
+        android:textStyle="bold"
+        android:textSize="14sp"
+        android:backgroundTint="#303F9F"/>
+
+    <CheckBox
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Hindi"
+        android:id="@+id/checkbox3"
+        android:textSize="14sp"
+        android:textStyle="bold"
+        android:backgroundTint="#303F9F"
+        />
+
+    <CheckBox
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Tamil"
+        android:id="@+id/checkbox4"
+        android:textSize="14sp"
+        android:textStyle="bold"
+        android:backgroundTint="#303F9F"/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Click"
+        android:id="@+id/btnclick"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:layout_marginTop="23sp"/>
+
+
+</LinearLayout>
