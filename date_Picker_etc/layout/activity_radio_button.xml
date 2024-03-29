@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/linear"
+    android:orientation="vertical"
+    android:gravity="center"
+    tools:context=".Radio_button">
+
+
+
+<!--        <RadioButton-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:textSize="20sp"-->
+<!--            android:text="Yellow"-->
+<!--            android:textStyle="bold|italic"-->
+<!--            android:id="@+id/radioyellow"/>-->
+
+<!--        <RadioButton-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:textStyle="bold|italic"-->
+<!--            android:text="Blue"-->
+<!--            android:textSize="20sp"-->
+<!--            android:id="@+id/radioblue"/>-->
+
+<!--        <RadioButton-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:text="Red"-->
+<!--            android:textSize="20sp"-->
+<!--            android:textStyle="bold|italic"-->
+<!--            android:id="@+id/radiored"/>-->
+
+<!--        <RadioButton-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:text="Black"-->
+<!--            android:textStyle="bold|italic"-->
+<!--            android:textSize="20sp"-->
+<!--            android:id="@+id/radioblack"/>-->
+
+<!--        <RadioButton-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:text="White"-->
+<!--            android:textStyle="bold|italic"-->
+<!--            android:textSize="20sp"-->
+<!--            android:id="@+id/radiowhite"/>-->
+
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Enter First Number"
+        android:textSize="20sp"
+        android:layout_marginTop="20dp"
+        android:textStyle="bold|italic"
+        android:inputType="number"
+        android:id="@+id/edt1stnmumber"/>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Enter Second Number"
+        android:textSize="20sp"
+        android:inputType="number"
+        android:layout_marginTop="7dp"
+        android:textStyle="bold|italic"
+        android:layout_below="@id/edt1stnmumber"
+        android:id="@+id/edt2ndnumber"/>
+
+    <RadioGroup
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        >
+        <RadioButton
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="Addition"
+            android:textStyle="bold"
+            android:textSize="17sp"
+
+            android:id="@+id/add_radio"/>
+
+        <RadioButton
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Substraction"
+            android:textSize="17sp"
+            android:textStyle="bold"
+            android:id="@+id/sub_radio"/>
+
+        <RadioButton
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Multiplication"
+            android:textSize="17sp"
+            android:textStyle="bold"
+            android:id="@+id/multi_radio"/>
+
+        <RadioButton
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Division"
+            android:textSize="17sp"
+            android:textStyle="bold"
+            android:id="@+id/div_radio"/>
+
+    </RadioGroup>
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:textStyle="bold"
+        android:text="Calculate"
+        android:backgroundTint="#E64A19"
+        android:textSize="20sp"
+        android:id="@+id/btncalculator"
+        android:textColor="@color/white"/>
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Total"
+        android:layout_marginTop="70dp"
+        android:textSize="50sp"
+        android:textStyle="bold"
+        android:id="@+id/txt_total"
+      android:textColor="@color/white"/>
+
+
+
+</LinearLayout>

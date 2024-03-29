@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    tools:context=".Progressbar">
+
+
+<!--&lt;!&ndash;    <TextView&ndash;&gt;-->
+<!--&lt;!&ndash;        android:layout_width="wrap_content"&ndash;&gt;-->
+<!--&lt;!&ndash;        android:layout_height="wrap_content"&ndash;&gt;-->
+<!--&lt;!&ndash;        android:text="Progress Bar in Android"&ndash;&gt;-->
+<!--&lt;!&ndash;        android:textStyle="bold"&ndash;&gt;-->
+<!--&lt;!&ndash;        android:textSize="25sp"&ndash;&gt;-->
+<!--&lt;!&ndash;        android:textColor="#303F9F"&ndash;&gt;-->
+<!--&lt;!&ndash;        android:id="@+id/txtprogress"/>&ndash;&gt;-->
+
+<!--&lt;!&ndash;    <ProgressBar&ndash;&gt;-->
+<!--&lt;!&ndash;        android:id="@+id/idPBLoading"&ndash;&gt;-->
+<!--&lt;!&ndash;        android:layout_width="wrap_content"&ndash;&gt;-->
+<!--&lt;!&ndash;        android:layout_height="wrap_content"&ndash;&gt;-->
+<!--&lt;!&ndash;        android:layout_margin="20dp"&ndash;&gt;-->
+<!--&lt;!&ndash;        android:visibility="visible"/>&ndash;&gt;-->
+
+<!--&lt;!&ndash;    <Button&ndash;&gt;-->
+<!--&lt;!&ndash;        android:layout_width="wrap_content"&ndash;&gt;-->
+<!--&lt;!&ndash;        android:layout_height="wrap_content"&ndash;&gt;-->
+<!--&lt;!&ndash;        android:layout_marginTop="20dp"&ndash;&gt;-->
+<!--&lt;!&ndash;        android:text="Show Progress Bar"&ndash;&gt;-->
+<!--&lt;!&ndash;        android:textStyle="bold"&ndash;&gt;-->
+<!--&lt;!&ndash;        android:textColor="@color/white"&ndash;&gt;-->
+<!--&lt;!&ndash;        android:id="@+id/showprogressbarbtn"/>&ndash;&gt;-->
+<!--&lt;!&ndash;</LinearLayout>&#45;&#45;-->
+<!-- -->
+    <RatingBar
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:numStars="5"
+        android:stepSize="1"
+        android:id="@+id/ratingbar"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="Rate Me!!"
+        android:textSize="30sp"
+        android:textStyle="bold|italic"
+        android:textColor="@android:color/background_dark"
+        android:id="@+id/text"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="25sp"
+        android:textColor="@android:color/holo_blue_bright"
+        android:layout_marginTop="100dp"
+        android:id="@+id/text2"/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Submit"
+        android:layout_marginTop="50dp"
+        android:id="@+id/btnratesubmit"/>
+
+
+
+</LinearLayout>

@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".ColorPicker">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Babariya Rutvik"
+        android:textSize="30sp"
+        android:layout_marginTop="20dp"
+        android:gravity="center"
+        android:textStyle="bold"
+        android:id="@+id/txtname"/>
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="80dp"
+        android:textStyle="bold"
+        android:text="Pick Color"
+        android:id="@+id/pick_color_btn"
+        android:textSize="20sp"
+        android:backgroundTint="#1976D2"
+        android:textColor="@color/white"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Your Selected color is:"
+        android:layout_gravity="center"
+        android:layout_marginTop="50dp"
+        android:textSize="20sp"
+        android:textStyle="bold"/>
+
+        <View
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_gravity="center"
+            android:background="@android:color/darker_gray"
+            android:layout_marginTop="15dp"
+           android:id="@+id/selected_view"/>
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="60dp"
+        android:text="Set Color"
+        android:id="@+id/set_color_btn"
+        android:backgroundTint="#1976D2"
+        android:textSize="20sp"
+        android:textColor="@color/white"
+        android:textStyle="bold"/>
+
+
+</LinearLayout>
