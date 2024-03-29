@@ -1,55 +1,63 @@
-package com.example.lifecyclejava;
+package com.example.bmi;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.annotation.SuppressLint;
 import android.os.Bundle;
-import android.widget.Toast;
+import android.view.View;
+import android.widget.Button;
+import android.widget.EditText;
+import android.widget.LinearLayout;
+import android.widget.TextView;
 
 public class MainActivity extends AppCompatActivity {
+    EditText edtweight;
+    EditText edtheightft;
+    EditText edtheinch;
+    Button btnbmi;
+    TextView txtresult;
+    LinearLayout layout;
 
+
+    @SuppressLint("MissingInflatedId")
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        Toast.makeText(getApplicationContext(),"On Created",Toast.LENGTH_LONG).show();
+        edtweight=findViewById(R.id.edtheight);
+        edtheightft=findViewById(R.id.edtweightft);
+        edtheinch=findViewById(R.id.edtheightinch);
+        btnbmi=findViewById(R.id.btnbmi);
+        txtresult=findViewById(R.id.txtresult);
+        layout=findViewById(R.id.linearlayout);
 
 
-    }
+        btnbmi.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                int weight=Integer.parseInt(edtweight.getText().toString());
+                int heft=Integer.parseInt(edtheightft.getText().toString());
+                int heinch=Integer.parseInt(edtheinch.getText().toString());
 
-    @Override
-    protected void onStart() {
-        super.onStart();
-        Toast.makeText(this, "On Started", Toast.LENGTH_SHORT).show();
-    }
+                int totalInch=heft*12+heinch;
+                double totalcm=totalInch*2.53;
+                double totalM=totalcm/100;
+                double bmi=weight/(totalM*totalM);
 
-    @Override
-    protected void onResume() {
-        super.onResume();
-        Toast.makeText(this, "On Resume", Toast.LENGTH_SHORT).show();
-    }
-
-    @Override
-    protected void onPause() {
-        super.onPause();
-        Toast.makeText(this, "On Pause", Toast.LENGTH_SHORT).show();
-    }
-
-    @Override
-    protected void onStop() {
-        super.onStop();
-        Toast.makeText(this, "On Stopped", Toast.LENGTH_SHORT).show();
-    }
-
-    @Override
-    protected void onRestart() {
-        super.onRestart();
-        Toast.makeText(this, "On Restarted", Toast.LENGTH_SHORT).show();
-    }
-
-    @Override
-    protected void onDestroy() {
-        super.onDestroy();
-        Toast.makeText(this, "On Destroyed", Toast.LENGTH_SHORT).show();
+                if (bmi>25){
+                    txtresult.setText("You are Overweight");
+                    layout.setBackgroundResource(R.color.O_Weight);
+                }
+                else if (bmi<18){
+                    txtresult.setText("You are Underweight");
+                    layout.setBackgroundResource(R.color.U_weight);
+                }
+                else {
+                    txtresult.setText("You are Healthy");
+                    layout.setBackgroundResource(R.color.healthy);
+                }
+            }
+        });
     }
 }
