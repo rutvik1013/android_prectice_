@@ -1,0 +1,195 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="horizontal"
+    tools:context=".MainActivity">
+    <HorizontalScrollView
+        android:id="@+id/horizontalScrollView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        >
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:orientation="horizontal"
+        android:gravity="center">
+
+        <ImageView
+            android:id="@+id/csk"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:src="@drawable/csk_" />
+
+        <TextView
+            android:id="@+id/csktext"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Chennai Super Kings"
+            android:textSize="20sp"
+            android:layout_marginTop="6dp"
+            android:textStyle="bold" />
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:src="@drawable/mi"
+            android:layout_marginTop="8dp"
+            android:id="@+id/mi"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Mumbai indians"
+            android:textStyle="bold"
+            android:textSize="20sp"
+            android:gravity="center"
+            android:layout_marginTop="6dp"
+            android:id="@+id/mi_text"/>
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:src="@drawable/rcb"
+            android:id="@+id/rcb"
+            android:layout_marginTop="8dp"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Royal Challenger Benglor"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:gravity="center"
+            android:layout_marginTop="6dp"
+            android:id="@+id/rcb_text"/>
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:src="@drawable/dc_"
+            android:id="@+id/dc"
+            android:layout_marginTop="8dp"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Delhi Capitals"
+            android:id="@+id/delhitext"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:gravity="center"
+            android:layout_marginTop="6dp"/>
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:src="@drawable/gujarat"
+            android:layout_marginTop="8dp"
+            android:id="@+id/gujarat"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Gujareat Titans"
+            android:gravity="center"
+            android:layout_marginTop="6dp"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:id="@+id/gujarattext"/>
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:src="@drawable/kkr"
+            android:layout_marginTop="8dp"
+            android:id="@+id/kkr"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Kolkata Knight Riders"
+            android:textStyle="bold"
+            android:textSize="20sp"
+            android:layout_marginTop="6dp"
+            android:gravity="center"
+            android:id="@+id/kkrtext"/>
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:src="@drawable/lsg"
+            android:layout_marginTop="8dp"
+            android:id="@+id/lsg"
+            />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Lakhnow Super Giants"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:id="@+id/lsgtext"
+            android:gravity="center"
+            android:layout_marginTop="6dp"/>
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:src="@drawable/rr"
+            android:layout_marginTop="8dp"
+            android:id="@+id/rr"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Rajasthan Royals"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:layout_marginTop="6dp"
+            android:gravity="center"
+            android:id="@+id/rajasthantext"/>
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:src="@drawable/srh"
+            android:layout_marginTop="8dp"
+            android:id="@+id/srh"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Sunrise Hyderabad"
+            android:textStyle="bold"
+            android:textSize="20sp"
+            android:gravity="center"
+            android:layout_marginTop="6dp"
+            android:id="@+id/srhtext"/>
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:src="@drawable/punjab_kings"
+            android:layout_marginTop="8dp"
+            android:id="@+id/punjab_kings"
+            />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Punjab Kings"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:id="@+id/punjabkingstext"
+            android:gravity="center"
+            android:layout_marginTop="6dp"/>
+
+
+</LinearLayout>
+    </HorizontalScrollView>
+</LinearLayout>
