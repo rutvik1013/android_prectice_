@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:gravity="center">
+
+    <ImageView
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        app:siBorderWidth="2dp"
+        android:src="@drawable/audi"
+        android:scaleType="centerCrop"
+        android:layout_marginTop="8dp"
+        android:id="@+id/car_list_image"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Car Name"
+        android:gravity="center"
+        android:layout_marginTop="9dp"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:id="@+id/car_name_text"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Car Price"
+        android:textStyle="bold"
+        android:gravity="center"
+        android:textSize="10sp"
+        android:id="@+id/car_price_text"/>
+
+
+</LinearLayout>
