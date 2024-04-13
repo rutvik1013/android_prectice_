@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:cardCornerRadius="6dp"
+    android:layout_marginTop="6dp"
+    android:layout_marginStart="5dp"
+    android:layout_marginEnd="5dp"
+    app:cardElevation="8dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        >
+        <com.github.siyamed.shapeimageview.CircularImageView
+            android:layout_width="160dp"
+            android:layout_height="160dp"
+            android:src="@drawable/img1"
+            android:scaleType="fitXY"
+            android:id="@+id/imgfragmentchat"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:gravity="center">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Name"
+                android:layout_marginTop="10dp"
+                android:textStyle="bold|italic"
+                android:id="@+id/fragment_chat_txt_name"
+                android:textSize="10sp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Phone-Number"
+                android:textSize="8sp"
+                android:layout_marginTop="7dp"
+                android:textStyle="bold"
+                android:textColor="#303F9F"
+                android:id="@+id/fragment_chat_txt_phone_number"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="7dp"
+                android:text="Adress"
+                android:textStyle="italic|bold"
+                android:textSize="6sp"
+                android:textColor="#D32F2F"
+                android:id="@+id/fragment_chat_txt_adress"/>
+
+
+        </LinearLayout>
+    </LinearLayout>
+
+</androidx.cardview.widget.CardView>
