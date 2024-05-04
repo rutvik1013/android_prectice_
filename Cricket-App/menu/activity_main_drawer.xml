@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_csk"
+            android:icon="@drawable/baseline_copyright_24"
+            android:title="CSK" />
+        <item
+            android:id="@+id/nav_mi"
+            android:icon="@drawable/baseline_swap_vertical_circle_24"
+            android:title="Mumbai" />
+        <item
+            android:id="@+id/nav_rcb"
+            android:icon="@drawable/baseline_swap_horizontal_circle_24"
+            android:title="RCB" />
+
+        <item
+            android:id="@+id/nav_gujarat"
+            android:icon="@drawable/baseline_language_24"
+            android:title="Gujarat" />
+
+        <item
+            android:id="@+id/nav_delhi"
+            android:icon="@drawable/baseline_crisis_alert_24"
+            android:title="Delhi" />
+
+
+    </group>
+</menu>

@@ -1,0 +1,628 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TableLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginStart="14dp"
+    android:layout_marginEnd="14dp"
+    android:layout_marginTop="14dp"
+    android:layout_marginBottom="14dp"
+    >
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/txt_player_bowling_frag_name"
+        android:text="Player Name"
+        android:textColor="@color/black"
+        android:textSize="25sp"
+        android:textStyle="bold"
+        />
+
+
+    <TableRow
+        android:background="@color/purple_200"
+        android:padding="14dp"
+        >
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Bowling"
+            android:textStyle="bold"
+            android:textSize="17sp"
+            android:id="@+id/txt_player_bowling_carrer"
+            android:textColor="@color/white"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Test"
+            android:textStyle="bold"
+            android:textSize="17sp"
+            android:textAllCaps="true"
+            android:id="@+id/txt_player_test_carrer_bowling"
+            android:textColor="@color/white"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Odi"
+            android:textAllCaps="true"
+            android:textStyle="bold"
+            android:textSize="17sp"
+            android:id="@+id/txt_player_odi_carrer_bowling"
+            android:textColor="@color/white"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="t20"
+            android:textAllCaps="true"
+            android:textStyle="bold"
+            android:textSize="17sp"
+            android:id="@+id/txt_player_t20_carrer_bowling"
+            android:textColor="@color/white"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="IPL"
+            android:textStyle="bold"
+            android:textSize="17sp"
+            android:id="@+id/txt_player_ipl_carrer_bowling"
+            android:textColor="@color/white"/>
+    </TableRow>
+
+    <TableRow
+        android:background="#FBC02D"
+        android:padding="14dp"
+        >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Matches"
+            android:textSize="12sp"
+            android:textStyle="bold"
+            android:textColor="@color/white"
+            android:id="@+id/txt_player_matches_bowling"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/white"
+            android:textStyle="italic|bold"
+            android:layout_weight="1"
+            android:text=""
+            android:layout_marginStart="25dp"
+            android:id="@+id/test_txt_player_matches_bowling"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/white"
+            android:textStyle="italic|bold"
+            android:layout_weight="1"
+            android:text=""
+            android:id="@+id/odi_txt_player_matches_bowling"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/white"
+            android:textStyle="italic|bold"
+            android:layout_weight="1"
+            android:text=""
+            android:id="@+id/t20_txt_player_matches_bowling"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/white"
+            android:textStyle="italic|bold"
+            android:layout_weight="1"
+            android:text=""
+            android:id="@+id/ipl_txt_player_matches_bowling"/>
+
+    </TableRow>
+    <TableRow
+        android:background="#FBC02D"
+        android:padding="14dp"
+        >
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Innings"
+            android:textSize="12sp"
+            android:textStyle="bold"
+            android:textColor="@color/white"
+            android:id="@+id/txt_player_innings_bowling"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/white"
+            android:textStyle="italic|bold"
+            android:layout_marginStart="25dp"
+            android:layout_weight="1"
+            android:text=""
+            android:id="@+id/test_txt_player_innings_bowling"/>
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/white"
+            android:textStyle="italic|bold"
+            android:layout_weight="1"
+            android:text=""
+            android:id="@+id/odi_txt_player_innings_bowling"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/white"
+            android:textStyle="italic|bold"
+            android:layout_weight="1"
+            android:text=""
+            android:id="@+id/t20_txt_player_innings_bowling"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/white"
+            android:textStyle="italic|bold"
+            android:layout_weight="1"
+            android:text=""
+            android:id="@+id/ipl_txt_player_innings_bowling"/>
+
+
+
+    </TableRow>
+
+    <TableRow
+        android:background="#FBC02D"
+        android:padding="14dp"
+        >
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Balls"
+            android:textSize="12sp"
+            android:textStyle="bold"
+            android:textColor="@color/white"
+            android:id="@+id/txt_player_balls_bowling"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/white"
+            android:textStyle="italic|bold"
+            android:layout_marginStart="25dp"
+            android:layout_weight="1"
+            android:text=""
+            android:id="@+id/test_txt_player_balls_bowling"/>
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/white"
+            android:textStyle="italic|bold"
+            android:layout_weight="1"
+            android:text=""
+            android:id="@+id/odi_txt_player_balls_bowling"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/white"
+            android:textStyle="italic|bold"
+            android:layout_weight="1"
+            android:text=""
+            android:id="@+id/t20_txt_player_balls_bowling"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/white"
+            android:textStyle="italic|bold"
+            android:layout_weight="1"
+            android:text=""
+            android:id="@+id/ipl_txt_player_balls_bowling"/>
+
+
+
+    </TableRow>
+
+    <TableRow
+        android:background="#FBC02D"
+        android:padding="14dp"
+        >
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Runs"
+            android:textSize="12sp"
+            android:textStyle="bold"
+            android:textColor="@color/white"
+            android:id="@+id/txt_player_runs_bowling"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/white"
+            android:textStyle="italic|bold"
+            android:layout_marginStart="25dp"
+            android:layout_weight="1"
+            android:text=""
+            android:id="@+id/test_txt_player_runs_bowling"/>
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/white"
+            android:textStyle="italic|bold"
+            android:layout_weight="1"
+            android:text=""
+            android:id="@+id/odi_txt_player_runs_bowling"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/white"
+            android:textStyle="italic|bold"
+            android:layout_weight="1"
+            android:text=""
+            android:id="@+id/t20_txt_player_runs_bowling"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/white"
+            android:textStyle="italic|bold"
+            android:layout_weight="1"
+            android:text=""
+            android:id="@+id/ipl_txt_player_runs_bowling"/>
+
+
+
+    </TableRow>
+
+    <TableRow
+        android:background="#FBC02D"
+        android:padding="14dp"
+        >
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Maidens"
+            android:textSize="12sp"
+            android:textStyle="bold"
+            android:textColor="@color/white"
+            android:id="@+id/txt_player_maidens"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/white"
+            android:textStyle="italic|bold"
+            android:layout_marginStart="25dp"
+            android:layout_weight="1"
+            android:text=""
+            android:id="@+id/test_txt_player_maidens"/>
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/white"
+            android:textStyle="italic|bold"
+            android:layout_weight="1"
+            android:text=""
+            android:id="@+id/odi_txt_player_maidens"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/white"
+            android:textStyle="italic|bold"
+            android:layout_weight="1"
+            android:text=""
+            android:id="@+id/t20_txt_player_maidens"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/white"
+            android:textStyle="italic|bold"
+            android:layout_weight="1"
+            android:text=""
+            android:id="@+id/ipl_txt_player_maidens"/>
+
+
+
+    </TableRow>
+
+    <TableRow
+        android:background="#FBC02D"
+        android:padding="14dp"
+        >
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Wickets"
+            android:textSize="12sp"
+            android:textStyle="bold"
+            android:textColor="@color/white"
+            android:id="@+id/txt_player_wickets"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/white"
+            android:textStyle="italic|bold"
+            android:layout_marginStart="25dp"
+            android:layout_weight="1"
+            android:text=""
+            android:id="@+id/test_txt_player_wickets"/>
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/white"
+            android:textStyle="italic|bold"
+            android:layout_weight="1"
+            android:text=""
+            android:id="@+id/odi_txt_player_wickets"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/white"
+            android:textStyle="italic|bold"
+            android:layout_weight="1"
+            android:text=""
+            android:id="@+id/t20_txt_player_wickets"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/white"
+            android:textStyle="italic|bold"
+            android:layout_weight="1"
+            android:text=""
+            android:id="@+id/ipl_txt_player_wickets"/>
+
+
+
+    </TableRow>
+
+    <TableRow
+        android:background="#FBC02D"
+        android:padding="14dp"
+        >
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Avg"
+            android:textSize="12sp"
+            android:textStyle="bold"
+            android:textColor="@color/white"
+            android:id="@+id/txt_player_avg"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/white"
+            android:textStyle="italic|bold"
+            android:layout_marginStart="25dp"
+            android:layout_weight="1"
+            android:text=""
+            android:id="@+id/test_txt_player_avg"/>
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/white"
+            android:textStyle="italic|bold"
+            android:layout_weight="1"
+            android:text=""
+            android:id="@+id/odi_txt_player_avg"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/white"
+            android:textStyle="italic|bold"
+            android:layout_weight="1"
+            android:text=""
+            android:id="@+id/t20_txt_player_avg"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/white"
+            android:textStyle="italic|bold"
+            android:layout_weight="1"
+            android:text=""
+            android:id="@+id/ipl_txt_player_avg"/>
+
+
+
+    </TableRow>
+    <TableRow
+        android:background="#FBC02D"
+        android:padding="14dp"
+        >
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Economy"
+            android:textSize="12sp"
+            android:textStyle="bold"
+            android:textColor="@color/white"
+            android:id="@+id/txt_player_economy"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/white"
+            android:textStyle="italic|bold"
+            android:layout_marginStart="25dp"
+            android:layout_weight="1"
+            android:text=""
+            android:id="@+id/test_txt_player_economy"/>
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/white"
+            android:textStyle="italic|bold"
+            android:layout_weight="1"
+            android:text=""
+            android:id="@+id/odi_txt_player_economy"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/white"
+            android:textStyle="italic|bold"
+            android:layout_weight="1"
+            android:text=""
+            android:id="@+id/t20_txt_player_economy"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/white"
+            android:textStyle="italic|bold"
+            android:layout_weight="1"
+            android:text=""
+            android:id="@+id/ipl_txt_player_economy"/>
+
+
+
+    </TableRow>
+
+    <TableRow
+        android:background="#FBC02D"
+        android:padding="14dp"
+        >
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="4W"
+            android:textSize="12sp"
+            android:textStyle="bold"
+            android:textColor="@color/white"
+            android:id="@+id/txt_player_4w"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/white"
+            android:textStyle="italic|bold"
+            android:layout_marginStart="25dp"
+            android:layout_weight="1"
+            android:text=""
+            android:id="@+id/test_txt_player_4w"/>
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/white"
+            android:textStyle="italic|bold"
+            android:layout_weight="1"
+            android:text=""
+            android:id="@+id/odi_txt_player_4w"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/white"
+            android:textStyle="italic|bold"
+            android:layout_weight="1"
+            android:text=""
+            android:id="@+id/t20_txt_player_4w"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/white"
+            android:textStyle="italic|bold"
+            android:layout_weight="1"
+            android:text=""
+            android:id="@+id/ipl_txt_player_4w"/>
+
+
+
+    </TableRow>
+
+    <TableRow
+        android:background="#FBC02D"
+        android:padding="14dp"
+        >
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="5W"
+            android:textSize="12sp"
+            android:textStyle="bold"
+            android:textColor="@color/white"
+            android:id="@+id/txt_player_5w"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/white"
+            android:textStyle="italic|bold"
+            android:layout_marginStart="25dp"
+            android:layout_weight="1"
+            android:text=""
+            android:id="@+id/test_txt_player_5w"/>
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/white"
+            android:textStyle="italic|bold"
+            android:layout_weight="1"
+            android:text=""
+            android:id="@+id/odi_txt_player_5w"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/white"
+            android:textStyle="italic|bold"
+            android:layout_weight="1"
+            android:text=""
+            android:id="@+id/t20_txt_player_5w"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/white"
+            android:textStyle="italic|bold"
+            android:layout_weight="1"
+            android:text=""
+            android:id="@+id/ipl_txt_player_5w"/>
+
+
+
+    </TableRow>
+
+
+</TableLayout>

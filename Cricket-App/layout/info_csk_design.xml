@@ -1,0 +1,191 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="6dp"
+    app:cardElevation="7dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center">
+
+        <com.github.siyamed.shapeimageview.CircularImageView
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:src="@drawable/dhoni"
+            app:siBorderWidth="1dp"
+            android:id="@+id/csk_player_info_image"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Name"
+            android:layout_marginTop="4dp"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:id="@+id/txt_csk_player_info_name"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Country"
+            android:textSize="10sp"
+            android:textColor="#272222"
+            android:id="@+id/txt_csk_player_info_country"
+            android:textStyle="italic|bold"/>
+
+      <RelativeLayout
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          >
+          <TextView
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:text="Personal Information"
+              android:layout_marginTop="30dp"
+              android:id="@+id/txt_personal_info"
+              android:textSize="20sp"
+              android:textStyle="bold"/>
+
+          <TextView
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:layout_below="@id/txt_personal_info"
+              android:text="Born"
+              android:layout_marginTop="35dp"
+              android:textStyle="bold"
+              android:textSize="12sp"
+              android:id="@+id/txt_born"/>
+
+          <TextView
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:layout_alignParentRight="true"
+              android:text="Born Date"
+              android:layout_toLeftOf="@id/txt_born"
+              android:layout_below="@id/txt_born"
+              android:textStyle="italic|bold"
+              android:id="@+id/txt_born_date"
+              android:textSize="10sp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/txt_born"
+            android:text="Born Place"
+            android:layout_marginTop="7dp"
+            android:textSize="12sp"
+            android:textStyle="bold"
+            android:id="@+id/txt_bornPlace"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:text="Born Place"
+            android:textStyle="italic|bold"
+            android:textSize="10sp"
+            android:id="@+id/txt_born_place"
+            android:layout_below="@id/txt_born_date"
+            android:layout_marginTop="7dp"/>
+
+          <TextView
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:text="Nickname"
+              android:layout_below="@id/txt_bornPlace"
+              android:layout_marginTop="7dp"
+              android:textStyle="bold"
+              android:id="@+id/txt_nickname"
+              android:textSize="12sp"/>
+
+          <TextView
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:layout_alignParentRight="true"
+              android:text="NickName"
+              android:layout_below="@id/txt_born_place"
+              android:layout_marginTop="7dp"
+              android:textSize="10sp"
+              android:id="@+id/Txt_Nickname"
+              android:textStyle="italic|bold"/>
+
+          <TextView
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:text="Role"
+              android:layout_below="@id/txt_nickname"
+              android:layout_marginTop="7dp"
+              android:textSize="12sp"
+              android:textStyle="bold"
+              android:id="@+id/txt_role"/>
+
+          <TextView
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:layout_alignParentRight="true"
+              android:textSize="10sp"
+              android:layout_below="@id/Txt_Nickname"
+              android:layout_marginTop="7dp"
+              android:textStyle="italic|bold"
+              android:text="Role"
+              android:id="@+id/TXT_role"/>
+
+          <TextView
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:layout_below="@id/txt_role"
+              android:layout_marginTop="7dp"
+              android:id="@+id/txt_battingstyle"
+              android:text="Batting Style"
+              android:textStyle="bold"
+              android:textSize="12sp"/>
+
+          <TextView
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:id="@+id/TXT_Battingstyle"
+              android:text="Batting Style"
+              android:layout_alignParentRight="true"
+              android:layout_below="@id/TXT_role"
+              android:textSize="10sp"
+              android:textStyle="italic|bold"
+              android:layout_marginTop="7dp"/>
+
+          <TextView
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:layout_below="@id/txt_battingstyle"
+              android:layout_marginTop="7dp"
+              android:text="Bowling Style"
+              android:textStyle="bold"
+              android:textSize="12sp"
+              android:id="@+id/txt_bowlingstyle"/>
+
+          <TextView
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:layout_alignParentRight="true"
+              android:text="Bowling Style"
+              android:textSize="10sp"
+              android:id="@+id/TXT_Bowlingstyle"
+              android:textStyle="italic|bold"
+              android:layout_below="@id/TXT_Battingstyle"
+              android:layout_marginTop="7dp"/>
+
+
+
+      </RelativeLayout>
+
+    </LinearLayout>
+
+
+
+
+
+</androidx.cardview.widget.CardView>

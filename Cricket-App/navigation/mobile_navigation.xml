@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/nav_csk">
+
+
+    <fragment
+        android:id="@+id/nav_csk"
+        android:name="com.example.cricinfo.Fragment.CskFragment"
+        android:label="Chennai"
+        tools:layout="@layout/fragment_csk"/>
+
+   <fragment
+       android:id="@+id/nav_mi"
+       android:name="com.example.cricinfo.Fragment.Mi_Fragment"
+       android:label="Mumbai"
+       tools:layout="@layout/fragment_mi_"
+       />
+
+    <fragment
+        android:id="@+id/nav_rcb"
+        android:name="com.example.cricinfo.Fragment.RcbFragment"
+        android:label="Benglore"
+        tools:layout="@layout/fragment_rcb"/>
+
+    <fragment
+        android:id="@+id/nav_gujarat"
+        android:name="com.example.cricinfo.Fragment.GujaratFragment"
+        android:label="Gujarat"
+        tools:layout="@layout/fragment_gujarat"/>
+
+    <fragment
+        android:id="@+id/nav_delhi"
+        android:name="com.example.cricinfo.Fragment.DelhiFragment"
+        android:label="Delhi"
+        tools:layout="@layout/fragment_delhi"/>
+
+
+
+</navigation>

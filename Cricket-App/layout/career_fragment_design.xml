@@ -1,0 +1,326 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Player Name"
+        android:textSize="26sp"
+        android:layout_marginTop="10dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginBottom="10dp"
+        android:textStyle="bold"
+        android:textColor="@color/black"
+        android:id="@+id/carrer_player_name"/>
+
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="42dp">
+
+        <TableRow
+            android:background="#20808080"
+            android:padding="13dp"
+            >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="t20"
+                android:textSize="30sp"
+                android:textColor="@color/black"
+                android:textStyle="bold"
+                android:textAllCaps="true"
+                android:id="@+id/t20_career_text"/>
+
+        </TableRow>
+
+
+
+    </TableLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        >
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Debut"
+            android:textSize="20sp"
+            android:textStyle="bold|italic"
+            android:layout_marginTop="10dp"
+            android:layout_marginStart="12dp"
+            android:id="@+id/debute_t20_text"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginEnd="7dp"
+            android:textStyle="italic|bold"
+            android:textSize="15sp"
+            android:text="rutvik"
+            android:layout_marginTop="10dp"
+            android:id="@+id/debute_t20_text_name"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/debute_t20_text"
+            android:layout_marginTop="14dp"
+            android:text="Last Played"
+            android:textSize="20sp"
+            android:textStyle="bold|italic"
+            android:layout_marginStart="12dp"
+            android:id="@+id/lat_player_t20"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/debute_t20_text_name"
+            android:layout_marginTop="14dp"
+            android:text="Rutvik"
+            android:layout_alignParentRight="true"
+            android:id="@+id/last_t20_text_name"
+            android:textSize="15sp"
+            android:layout_marginEnd="7dp"
+            android:textStyle="italic|bold"/>
+
+
+
+
+
+
+
+
+    </RelativeLayout>
+
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="6dp">
+        <TableRow
+            android:background="#20808080"
+            android:padding="13dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="test"
+                android:textSize="30sp"
+                android:textColor="@color/black"
+                android:textStyle="bold"
+                android:textAllCaps="true"
+                android:id="@+id/test_career_text"/>
+
+        </TableRow>
+
+    </TableLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Debut"
+            android:textSize="20sp"
+            android:textStyle="bold|italic"
+            android:layout_marginTop="10dp"
+            android:layout_marginStart="12dp"
+            android:id="@+id/debute_test_text"/>
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginEnd="7dp"
+            android:textStyle="italic|bold"
+            android:textSize="15sp"
+            android:text="rutvik"
+            android:layout_marginTop="10dp"
+            android:id="@+id/debute_test_text_name"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/debute_test_text"
+            android:layout_marginTop="14dp"
+            android:text="Last Played"
+            android:textSize="20sp"
+            android:textStyle="bold|italic"
+            android:layout_marginStart="12dp"
+            android:id="@+id/lat_player_test"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/debute_test_text_name"
+            android:layout_marginTop="14dp"
+            android:text="Rutvik"
+            android:layout_alignParentRight="true"
+            android:id="@+id/last_test_text_name"
+            android:textSize="15sp"
+            android:layout_marginEnd="7dp"
+            android:textStyle="italic|bold"/>
+
+
+
+
+    </RelativeLayout>
+
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="6dp">
+        <TableRow
+            android:background="#20808080"
+            android:padding="13dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="odi"
+                android:textSize="30sp"
+                android:textColor="@color/black"
+                android:textStyle="bold"
+                android:textAllCaps="true"
+                android:id="@+id/odi_career_text"/>
+
+        </TableRow>
+
+    </TableLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        >
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Debut"
+            android:textSize="20sp"
+            android:textStyle="bold|italic"
+            android:layout_marginTop="10dp"
+            android:layout_marginStart="12dp"
+            android:id="@+id/debute_odi_text"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginEnd="7dp"
+            android:textStyle="italic|bold"
+            android:textSize="15sp"
+            android:text="rutvik"
+            android:layout_marginTop="10dp"
+            android:id="@+id/debute_odi_text_name"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/debute_odi_text"
+            android:layout_marginTop="14dp"
+            android:text="Last Played"
+            android:textSize="20sp"
+            android:textStyle="bold|italic"
+            android:layout_marginStart="12dp"
+            android:id="@+id/lat_player_odi"/>
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/debute_odi_text_name"
+            android:layout_marginTop="14dp"
+            android:text="Rutvik"
+            android:layout_alignParentRight="true"
+            android:id="@+id/last_odi_text_name"
+            android:textSize="15sp"
+            android:layout_marginEnd="7dp"
+            android:textStyle="italic|bold"/>
+
+    </RelativeLayout>
+
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="6dp">
+        <TableRow
+            android:background="#20808080"
+            android:padding="13dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="ipl"
+                android:textSize="30sp"
+                android:textColor="@color/black"
+                android:textStyle="bold"
+                android:textAllCaps="true"
+                android:id="@+id/ipl_career_text"/>
+
+        </TableRow>
+
+    </TableLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Debut"
+            android:textSize="20sp"
+            android:textStyle="bold|italic"
+            android:layout_marginTop="10dp"
+            android:layout_marginStart="12dp"
+            android:id="@+id/debute_ipl_text"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginEnd="7dp"
+            android:textStyle="italic|bold"
+            android:textSize="15sp"
+            android:text="rutvik"
+            android:layout_marginTop="10dp"
+            android:id="@+id/debute_ipl_text_name"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/debute_ipl_text"
+            android:layout_marginTop="14dp"
+            android:text="Last Played"
+            android:textSize="20sp"
+            android:textStyle="bold|italic"
+            android:layout_marginStart="12dp"
+            android:id="@+id/lat_player_ipl"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/debute_ipl_text_name"
+            android:layout_marginTop="14dp"
+            android:text="Rutvik"
+            android:layout_alignParentRight="true"
+            android:id="@+id/last_ipl_text_name"
+            android:textSize="15sp"
+            android:layout_marginEnd="7dp"
+            android:textStyle="italic|bold"/>
+
+    </RelativeLayout>
+
+
+</LinearLayout>
