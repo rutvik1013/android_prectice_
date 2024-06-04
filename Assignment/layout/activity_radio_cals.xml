@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/linear"
+    android:orientation="vertical"
+    android:gravity="center"
+    tools:context=".Radio_Cals">
+
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:startIconDrawable="@drawable/baseline_format_list_numbered_24"
+        app:startIconTint="#D32F2F"
+        android:layout_margin="10dp"
+        app:boxStrokeColor="@color/black">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Enter 1st Number"
+            android:textStyle="bold"
+            android:textSize="12sp"
+            android:id="@+id/edtradio1stnumber"/>
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:startIconDrawable="@drawable/baseline_format_list_numbered_rtl_24"
+        android:layout_margin="10sp"
+        app:startIconTint="#303F9F"
+        app:boxStrokeColor="@color/black">
+        <com.google.android.material.textfield.TextInputEditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Enter 2nd Number"
+            android:textStyle="bold"
+            android:textSize="12sp"
+            android:id="@+id/edtradio2ndnumber"/>
+    </com.google.android.material.textfield.TextInputLayout>
+
+
+    <RadioGroup
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <RadioButton
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Addition"
+            android:textSize="15sp"
+            android:id="@+id/add_radio_button"
+            android:textStyle="bold"/>
+
+        <RadioButton
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            android:text="Substraction"
+            android:textSize="15sp"
+            android:id="@+id/sub_radio_button"
+            android:textStyle="bold"/>
+
+
+        <RadioButton
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Multiplication"
+            android:textSize="15sp"
+            android:id="@+id/multi_radio_button"
+            android:textStyle="bold"/>
+
+
+        <RadioButton
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Division"
+            android:textSize="15sp"
+            android:id="@+id/div_radio_button"
+            android:textStyle="bold"/>
+
+    </RadioGroup>
+
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:background="@drawable/button"
+        android:layout_marginTop="14sp"
+        android:text="Calculate"
+        android:textSize="14sp"
+        android:textStyle="bold"
+        android:textColor="@color/white"
+        android:id="@+id/btncalculate"/>
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="14sp"
+            android:text="Number Calculate"
+            android:textSize="10sp"
+            android:textColor="@color/white"
+            android:textStyle="bold"
+            android:id="@+id/txtcalculate"/>
+
+</LinearLayout>

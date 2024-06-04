@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    tools:context=".CheckboxActivity">
+
+    <TextView
+        android:id="@+id/txt_check_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Babariya Rutvik"
+        android:textSize="22sp"
+        android:textColor="@color/black"
+        android:textStyle="bold|italic" />
+
+    <CheckBox
+        android:id="@+id/checkname"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginStart="45dp"
+        android:layout_marginTop="56dp"
+        android:text="Name Check"
+        android:textStyle="italic|bold"
+        android:textColor="#EF9700" />
+</LinearLayout>

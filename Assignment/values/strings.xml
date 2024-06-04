@@ -1,0 +1,19 @@
+<resources>
+    <string name="app_name">Assignments</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+    <string-array name="string_list">
+        <item>Rutvik</item>
+        <item>Dhaval</item>
+        <item>Jayraj</item>
+        <item>Bhavin</item>
+        <item>Bhavesh</item>
+        <item>Nayan</item>
+        <item>Ronak</item>
+        <item>Ruturaj</item>
+        <item>Raju</item>
+    </string-array>
+
+
+</resources>

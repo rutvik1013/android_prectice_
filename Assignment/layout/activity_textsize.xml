@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:orientation="vertical"
+    tools:context=".Textsize">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="Babariya Rutvik"
+        android:textSize="12sp"
+        android:textStyle="bold"
+        android:textColor="#D32F2F"
+        android:id="@+id/txtname"/>
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/button"
+        android:text="Increase"
+        android:layout_marginTop="50dp"
+        android:id="@+id/btnincrease"
+        android:textStyle="bold"
+        android:textColor="@color/white"/>
+
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/button"
+        android:text="Decrease"
+        android:layout_marginTop="50dp"
+        android:id="@+id/btndecrease"
+        android:textStyle="bold"
+        android:textColor="@color/white"/>
+
+</LinearLayout>

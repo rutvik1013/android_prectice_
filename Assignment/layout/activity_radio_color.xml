@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    android:id="@+id/relativelayout"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Radio_color">
+
+    <RadioGroup
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+
+        <RadioButton
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="14dp"
+            android:id="@+id/red_radio"
+            android:text="Red"
+            android:textSize="14sp"
+            android:textStyle="bold"
+            android:textColor="#E31313"/>
+
+        <RadioButton
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="14dp"
+            android:text="Yellow"
+            android:textSize="14sp"
+            android:textColor="#F9A825"
+            android:textStyle="bold"
+            android:id="@+id/yellow_radio"/>
+
+        <RadioButton
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="14sp"
+            android:text="Green"
+            android:textStyle="bold"
+            android:textSize="14sp"
+            android:textColor="#00695C"
+            android:id="@+id/green_radio"/>
+
+        <RadioButton
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Blue"
+            android:textSize="14sp"
+            android:layout_marginStart="14dp"
+            android:textStyle="bold"
+            android:textColor="#4527A0"
+            android:id="@+id/blue_radio"/>
+
+    </RadioGroup>
+
+</RelativeLayout>
