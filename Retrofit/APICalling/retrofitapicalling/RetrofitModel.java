@@ -1,6 +1,11 @@
 package com.example.retrofitapicalling;
 
-public class RetrofitModel
+import android.os.Parcel;
+import android.os.Parcelable;
+
+import androidx.annotation.NonNull;
+
+public class RetrofitModel implements Parcelable
 {
     private String name;
     private String realname;
@@ -12,7 +17,8 @@ public class RetrofitModel
     private String bio;
 
 
-    // Constructer
+    // Created Constructor
+
 
     public RetrofitModel(String name, String realname, String team, String firstappearance, String createdby, String publisher, String imageurl, String bio) {
         this.name = name;
@@ -24,8 +30,47 @@ public class RetrofitModel
         this.imageurl = imageurl;
         this.bio = bio;
     }
+    // implementing parcelable interface
+    protected RetrofitModel(Parcel in){
+        name=in.readString();
+        realname=in.readString();
+        team=in.readString();
+        firstappearance=in.readString();
+        createdby=in.readString();
+        publisher=in.readString();
+        imageurl=in.readString();
+        bio=in.readString();
 
-    // Gatter and Setter
+    }
+
+    @Override
+    public int describeContents() {
+        return 0;
+    }
+
+    @Override
+    public void writeToParcel(@NonNull Parcel parcel, int i) {
+        parcel.writeString(name);
+        parcel.writeString(realname);
+        parcel.writeString(team);
+        parcel.writeString(firstappearance);
+        parcel.writeString(createdby);
+        parcel.writeString(publisher);
+        parcel.writeString(imageurl);
+        parcel.writeString(bio);
+    }
+    public static final Creator<RetrofitModel> CREATOR=new Creator<RetrofitModel>() {
+        @Override
+        public RetrofitModel createFromParcel(Parcel parcel) {
+            return new RetrofitModel(parcel);
+        }
+
+        @Override
+        public RetrofitModel[] newArray(int i) {
+            return new RetrofitModel[i];
+        }
+    };
+    // Getter And Setter
 
 
     public String getName() {
