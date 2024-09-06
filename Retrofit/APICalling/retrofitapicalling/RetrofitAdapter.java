@@ -40,25 +40,36 @@ public class RetrofitAdapter extends RecyclerView.Adapter<MyView>
         holder.txtname.setText(model.getName());
         holder.txtrealname.setText(model.getRealname());
         holder.txt_team.setText(model.getTeam());
-        holder.txt_firstapperence.setText(model.getFirstappearance());
-        holder.txtcreatedby.setText(model.getCreatedby());
         holder.txtpublisher.setText(model.getPublisher());
         holder.txtbio.setText(model.getBio());
 
         Picasso.get().load(model.getImageurl()).into(holder.imgmovie);
 
+        holder.isBioExpanded = false;
+
+        holder.txtreadmore.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                if (holder.isBioExpanded){
+                    holder.txtbio.setMaxLines(4);
+                    holder.txtreadmore.setText("Read More");
+                }
+                else
+                // Expanding bio
+                {
+                    holder.txtbio.setMaxLines(Integer.MAX_VALUE);
+                    holder.txtreadmore.setText("Read Less");
+                }
+                holder.isBioExpanded = !holder.isBioExpanded;
+            }
+        });
+
         holder.itemView.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 Intent i=new Intent(context, FullScreen.class);
-                i.putExtra("name", model.getName());
-                i.putExtra("realname", model.getRealname());
-                i.putExtra("team", model.getTeam());
-                i.putExtra("firstappearance", model.getFirstappearance());
-                i.putExtra("createdby", model.getCreatedby());
-                i.putExtra("publisher", model.getPublisher());
-                i.putExtra("bio", model.getBio());
-                i.putExtra("imageurl", model.getImageurl());
+                // Passing the model object using Parcelable
+                i.putExtra("model",model);
                 i.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
                 context.startActivity(i);
             }
@@ -74,7 +85,8 @@ public class RetrofitAdapter extends RecyclerView.Adapter<MyView>
 class MyView extends RecyclerView.ViewHolder{
 
     ImageView imgmovie;
-    TextView txtname,txtrealname,txt_team,txt_firstapperence,txtcreatedby,txtpublisher,txtbio;
+    TextView txtname,txtrealname,txt_team,txtpublisher,txtbio,txtreadmore;
+    boolean isBioExpanded;
     public MyView(@NonNull View itemView) {
         super(itemView);
 
@@ -82,9 +94,10 @@ class MyView extends RecyclerView.ViewHolder{
         txtname=itemView.findViewById(R.id.txtname);
         txtrealname=itemView.findViewById(R.id.txtrealname);
         txt_team=itemView.findViewById(R.id.txt_team);
-        txt_firstapperence=itemView.findViewById(R.id.txtfirstapperence);
-        txtcreatedby=itemView.findViewById(R.id.txtcreatedby);
         txtpublisher=itemView.findViewById(R.id.txtpublisher);
         txtbio=itemView.findViewById(R.id.txtbio);
+        txtreadmore=itemView.findViewById(R.id.readMore);
+
+
     }
 }
